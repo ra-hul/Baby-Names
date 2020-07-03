@@ -1,69 +1,70 @@
 <html>
 <head>
-<title>CSS DEMO</title>
-
-<link rel="stylesheet" href="css/style.css">
+<title>HTML FORM</title>
+<link rel ="stylesheet" href="style.css">
 </head>
-
-
 <body>
-
-<div class="div1">The Div Tag
-<div class="div2">The Div Tag</div>
-<div class="div3">The Div Tag</div>
-<div style="clear:both"></div>
-</div>
-
-
-<div class="div4"><h1><i>The Eye</i></h1></div>
-
-<ul>
-<li>HTML</li>
-<li>C-Sharp</li>
-<li>JAVA</li>
-<div style="clear:both;"></div>
-</ul>
-
-<ol>
-<li>HTML</li>
-<li>C-Sharp</li>
-<li>JAVA</li>
-<li>Python</li>
-</ol>
-
-<p id="para1">This is the CSS course which was enrolled from udemy for free.This is great opputunity to take.</p>
-
-
+<form action="from-process.php" method="post" enctype="multipart/form-data">
 <table>
 <tr>
-<th style="width: 20px;">Sl. No.</th>
-<th>Employe's Name</th>
-<th style="width: 20px;">Salery</th>
+<td>Upload your image</td>
+<td><input type="file" name="up_image"></td>
 </tr>
 <tr>
-<td>1</td>
-<td>Rahul</td>
-<td>100000</td>
+<td>Fist Name</td>
+<td><input type="text" name="f_name" placeholder="type your name"></td>
 </tr>
-<tr class="even">
-<td>2</td>
-<td>Paul</td>
-<td>10,0000</td>
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="l_name" placeholder="type your name"></td>
 </tr>
 
 <tr>
-<td>3</td>
-<td>Shanto</td>
-<td>20,000</td>
+<td>Password</td>
+<td><input type="password" name="pass" placeholder="type your password"></td>
 </tr>
-<tr class="even">
-<td>4</td>
-<td>Alex</td>
-<td>50,000</td>
+
+<tr>
+<td> Gender</td>
+<td>
+
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+
+</td>
+</tr>
+
+<tr>
+<td>Your Skills</td>
+<td> 
+<input type="checkbox" value="html">HTML<br>
+<input type="checkbox" value="PHP">PHP<br>
+<input type="checkbox" value="CSS">CSS<br>
+</td>
+</tr>
+<tr>
+<td>Information</td>
+<td>
+<select name="sel_country">
+<option selected>Select a Country</option>
+<option>Bangladesh</option>
+<option>India</option>
+<option>America</option>
+<option>Austrelia</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>
+<textarea cols="50" rows="10"></textarea>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit"></td>
 </tr>
 </table>
+</form>
 </body>
-
-
-
 </html>
